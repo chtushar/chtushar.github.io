@@ -1,11 +1,15 @@
-title{
+/*title{
     @include rfs(60);
+}*/
+html{
+    background-color: lightgray;
 }
 
 .jumbotron-fluid{
-    background-color: lightgrey;
+    background-color: lightgray;
     padding-top:15%;
     padding-bottom: 21.5%;
+    height: 100%;
 }
 
 #surname{
@@ -13,5 +17,7 @@ title{
 }
 
 #prof{
-    color:black;
+    background-color:black;
+    padding-right: 10px;
+    padding-left: 10px;
 }
