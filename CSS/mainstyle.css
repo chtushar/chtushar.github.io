@@ -1,0 +1,17 @@
+title{
+    @include rfs(60);
+}
+
+.jumbotron-fluid{
+    background-color: lightgrey;
+    padding-top:15%;
+    padding-bottom: 21.5%;
+}
+
+#surname{
+    color: black;
+}
+
+#prof{
+    color:black;
+}
