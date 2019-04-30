@@ -21,3 +21,6 @@ html{
     padding-right: 10px;
     padding-left: 10px;
 }
+.about a{
+    text-decoration: none;
+}
