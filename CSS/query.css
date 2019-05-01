@@ -1,5 +1,5 @@
 /* Small devices (landscape phones, 576px and less)*/
-@media (max-width: 400px) {
+@media (max-width: 426px) {
     #tusharchoudhari{
     font-size: 2.5em;
 }
@@ -11,11 +11,17 @@
 .about{
     font-size: 0.75em;
 }
+.jumbotron-fluid{
+    padding-top: 50%;
+}
+
  }
 
 /* Medium devices (tablets, 768px and less)*/
 @media (max-width: 768px) {
-
+    .jumbotron-fluid{
+        padding-top: 30%;
+    }
  }
 
 /* Large devices (desktops, 992px and less)*/
