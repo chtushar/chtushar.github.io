@@ -1,11 +1,11 @@
 /* Small devices (landscape phones, 576px and less)*/
 @media (max-width: 426px) {
     #tusharchoudhari{
-    font-size: 2.5em;
+    font-size: 3em;
 }
 
 #statement{
-    font-size: 1.5em;
+    font-size: 1.8em;
 }
 
 .about{
@@ -13,7 +13,7 @@
 }
 
 .jumbotron-fluid{
-    padding-top: 45%;
+    padding-top: 65%;
 }
 
  }
