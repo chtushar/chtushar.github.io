@@ -17,10 +17,10 @@
 
  }
 
-/* Medium devices (tablets, 768px and less)*/
-@media (max-width: 768px) {
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
     .jumbotron-fluid{
-        padding-top: 30%;
+        padding-top: 15%;
     }
  }
 
