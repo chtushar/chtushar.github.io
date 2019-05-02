@@ -32,6 +32,9 @@ section{
 #surname{
     color: black;
 }
+#statement{
+    -webkit-text-stroke: 1.5px black;
+}
 
 #prof{
     background-color:black;
