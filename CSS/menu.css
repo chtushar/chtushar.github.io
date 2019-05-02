@@ -6,4 +6,10 @@
   text-transform: uppercase;
   letter-spacing: 0.2em;
   text-decoration: none;
+
+}
+
+.about a::after{
+  color: white;
+  mix-blend-mode: difference;
 }
