@@ -10,7 +10,7 @@ function black(){
     profBack.style.transition="color 0.5s 0.3s ease-in,background-color 0.5s 0.3s ease-in"
 
     let menu= document.querySelector(".about a");
-    menu.style.color="#F2BB15";
+    menu.style.color="#855BFF";
     menu.style.transition="color 0.5s 0.3s ease-in";
 
 }
