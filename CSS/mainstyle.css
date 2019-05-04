@@ -10,7 +10,7 @@ section{
 #front{
     justify-content: center;
 }
-#skills{
+.sub-topics{
     background-color: black;
 }
 
@@ -32,6 +32,7 @@ section{
 #surname{
     color: black;
     -webkit-text-stroke: 1.5px white;
+
 }
 #statement{
     -webkit-text-stroke: 1.5px black;
@@ -47,4 +48,12 @@ section{
 }
 
 
+.sub-topics .sub-topic-name {
+    color: #F2BB15;
+    font-size: 3em;
+    padding-top: 30px;
+    padding-left: 10px;
+    font-weight: 100;
+    letter-spacing: 0.2em;
+}
 
