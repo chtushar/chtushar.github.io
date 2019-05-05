@@ -13,6 +13,11 @@
     font-size: 0.75em;
 }
 
+.logo{
+    width: 60px;
+    height: 60px;
+}
+
  }
 
 /* Medium devices (tablets, 768px and less)*/

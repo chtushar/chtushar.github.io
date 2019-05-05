@@ -13,4 +13,8 @@ function black(){
     menu.style.color="#855BFF";
     menu.style.transition="color 0.5s 0.3s ease-in";
 
+    let logo=document.querySelector(".logo");
+    logo.style.filter="invert(0)";
+    logo.style.transition="filter 0.5s 0.3s ease-in";
+
 }
