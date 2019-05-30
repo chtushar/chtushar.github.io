@@ -41,7 +41,7 @@ function white() {
 
 
 
-var scrollPos = 0;
+var scrollPos = 100;
 window.addEventListener('scroll',()=>{
     if (scrollPos < pageYOffset) {
         black();
