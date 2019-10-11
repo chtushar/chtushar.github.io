@@ -875,8 +875,8 @@ function page22Out() {
   });
 }
 
-//page1In();
-page21In();
+page1In();
+
 
 pageOn = 1;
 but.addEventListener('click', () => {
