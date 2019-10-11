@@ -844,6 +844,37 @@ function page21Out() {
   });
 }
 
+// ****************page-22**************
+
+var tl22 = anime.timeline({
+  easing: 'easeOutExpo',
+  duration: 1000,
+});
+
+var tl22Rev = anime.timeline({
+  easing: 'easeOutExpo',
+  duration: 600,
+});
+
+function page22In() {
+  tl22.add({
+    targets: '#section-22 .sentence .slide',
+    opacity: 1,
+    delay: anime.stagger(1000),
+  });
+  setTimeout(() => {
+    but.innerHTML = `<a href="tel: +919834169047">&#128222;‬</a>`;
+  }, 2000);
+}
+
+function page22Out() {
+  tl22Rev.add({
+    targets: '#section-22 .sentence .slide',
+    opacity: 0,
+    delay: anime.stagger(200),
+  });
+}
+
 page1In();
 
 pageOn = 1;
@@ -977,6 +1008,9 @@ but.addEventListener('click', () => {
       break;
     case 22:
       page21Out();
+      setTimeout(() => {
+        page22In();
+      }, 800);
       break;
     default:
       break;
