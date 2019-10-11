@@ -61,6 +61,63 @@ html, body{
     }
   }
 
+  #section-21{
+    .sentence{
+      margin-top: 10px;
+      .slide-1{
+        opacity: 0;
+      }
+      .slide-2{
+        opacity: 0;
+      }
+      .slide-3{
+        opacity: 0;
+      }
+      .slide{
+        padding-top: 20px;
+      }
+    }
+  }
+
+
+   .arrow-1{
+      position: absolute;
+      top: 78%;
+      left: 55%;
+      width: 70px;
+      height: 70px;
+      opacity: 0;
+    }
+    .arrow-2{
+      position: absolute;
+      z-index: 999;
+      top: 290px;
+      left: 45%;
+      width: 100px;
+      height: 100px;
+      opacity: 0;
+    }
+
+    .note{
+      position: absolute;
+      top: 78%;
+      left: 70%;
+      font-family: Mansalva;
+      font-size: 0.8em;
+      opacity: 0;
+    }
+    .joke{
+      position: absolute;
+      top: 380px;
+      left: 60%;
+      font-family: Mansalva;
+      font-size: 0.8em;
+      line-height: 25px;
+      opacity: 0;
+    }
+
+
+
   .button{
     @include middle;
       top: 90%;
@@ -68,3 +125,5 @@ html, body{
       cursor: pointer;
   }
  }
+
+

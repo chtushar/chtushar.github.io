@@ -175,14 +175,27 @@ var tl1Rev = anime.timeline({
 });
 
 function page1In() {
+  var arrow1 = document.querySelector('.arrow-1');
+  var note = document.querySelector('.note');
+
   tl1.add({
     targets: '#section-1 .sentence .slide',
     opacity: 1,
     delay: anime.stagger(1000),
   });
+
+  setTimeout(() => {
+    arrow1.style.opacity = '1';
+    note.style.opacity = '1';
+  }, 3500);
 }
 
 function page1Out() {
+  var arrow1 = document.querySelector('.arrow-1');
+  var note = document.querySelector('.note');
+
+  arrow1.style.opacity = '0';
+  note.style.opacity = '0';
   tl1Rev.add({
     targets: '#section-1 .sentence .slide',
     opacity: 0,
@@ -242,7 +255,7 @@ function page3In() {
   });
 
   setTimeout(() => {
-    but.innerHTML = `&#129393;`;
+    but.innerHTML = `&#128528;‬`;
   }, 3000);
 }
 
@@ -776,8 +789,56 @@ function page20In() {
 }
 
 function page20Out() {
-  tl120Rev.add({
+  tl20Rev.add({
     targets: '#section-20 .sentence .slide',
+    opacity: 0,
+    delay: anime.stagger(200),
+  });
+}
+
+// ****************page-21**************
+
+var tl21 = anime.timeline({
+  easing: 'easeOutExpo',
+  duration: 1000,
+});
+
+var tl21Rev = anime.timeline({
+  easing: 'easeOutExpo',
+  duration: 600,
+});
+
+function page21In() {
+  var arrow2 = document.querySelector('.arrow-2');
+  var joke = document.querySelector('.joke');
+
+  tl21.add({
+    targets: '#section-21 .sentence .slide',
+    opacity: 1,
+    delay: anime.stagger(1000),
+  });
+  setTimeout(() => {
+    but.innerHTML = `&#128525;`;
+  }, 2000);
+  setTimeout(() => {
+    arrow2.style.opacity = '1';
+    joke.style.opacity = '1';
+  }, 4000);
+  setTimeout(() => {
+    but.style.fontSize = '0.8em';
+    but.innerHTML = `Ghanerda&#128530;`;
+  }, 4500);
+}
+
+function page21Out() {
+  var arrow2 = document.querySelector('.arrow-2');
+  var joke = document.querySelector('.joke');
+
+  arrow2.style.opacity = '0';
+  joke.style.opacity = '0';
+
+  tl21Rev.add({
+    targets: '#section-21 .sentence .slide',
     opacity: 0,
     delay: anime.stagger(200),
   });
@@ -910,8 +971,13 @@ but.addEventListener('click', () => {
       break;
     case 21:
       page20Out();
+      setTimeout(() => {
+        page21In();
+      }, 800);
       break;
-
+    case 22:
+      page21Out();
+      break;
     default:
       break;
   }
