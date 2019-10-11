@@ -825,7 +825,7 @@ function page21In() {
     joke.style.opacity = '1';
   }, 4000);
   setTimeout(() => {
-    but.style.fontSize = '0.8em';
+    but.style.fontSize = '0.7em';
     but.innerHTML = `Ghanerda&#128530;`;
   }, 4500);
 }
